@@ -1,30 +1,30 @@
-# nodejs-graphql
+## nodejs-graphql
 npm init -y
 npm i express
 
-# install nodemon globally
+## install nodemon globally
 npm i nodemon
 
-# install nodemon dev
+## install nodemon dev
 npm i nodemon -D
 
-# add in package.json under scripts
+## add in package.json under scripts
 "dev": "nodemon server.js"
 
-# use nodemon
+## use nodemon
 npm run dev
 
-# install graphql with express
+## install graphql with express
 npm install graphql express-graphql
 
-# import graphql
+## import graphql
 const graphql = require("graphql");
 const { graphqlHTTP } = require("express-graphql");
 
-# access 
+## access 
 http://localhost:6969/graphql
 
-# query -> get all users
+## query -> get all users
 query {
   getAllUsers {
     firstName
@@ -34,7 +34,7 @@ query {
   }
 }
 
-# mutation -> create users
+## mutation -> create users
 mutation {
 createUser(firstName: "Dale", lastName:"Lanto", email: "dalelanto.work@gmail.com", password:"password") {
     firstName
